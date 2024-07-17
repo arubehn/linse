@@ -3,7 +3,7 @@ import functools
 
 __all__ = ['TypedSequence', 'Morpheme', 'Word', 'ints', 'floats']
 
-# test
+
 class TypedSequence(list):
     """
     A list of objects of the same type.
