@@ -186,6 +186,9 @@ class Word(TypedSequence):
     def to_text(self):
         return ''.join(m.to_text() for m in self)
 
+    def reversed_segments(self):
+        return Word([m[::-1] for m in self[::-1]])
+
 
 class Phrase(TypedSequence):
     item_type = Word
